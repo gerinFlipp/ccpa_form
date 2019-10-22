@@ -12,7 +12,6 @@ class FormViewModel : ViewModel() {
     val radioChecked = MutableLiveData<Int?>()
     val agreeToTerms = MutableLiveData<Boolean>(false)  // this shouldn't be null
 
-
     val valid = MediatorLiveData<Boolean>().apply {
         addSource(firstName) {
             value = checkFields()

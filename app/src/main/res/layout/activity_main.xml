@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="In accordance with CCPA, you may request your data from the Flipp app" />
+                android:text="In accordance with CCPA, you may request your data from the Flipp app." />
 
         </LinearLayout>
 
@@ -145,7 +145,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:text="subtitle 1" />
+                android:text="We will send you a copy of your data." />
 
             <RadioButton
                 android:id="@+id/Ccpa_radiogroup_option_delete_data"
@@ -157,7 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:text="subtitle 2" />
+                android:text="We will delete all your data on the Flipp platform." />
 
             <RadioButton
                 android:id="@+id/Ccpa_radiogroup_option_sell_data"
@@ -169,7 +169,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:text="subtitle 3" />
+                android:text="Flipp will not sell your data to 3rd parties." />
 
         </RadioGroup>
 
@@ -179,6 +179,7 @@
                 android:layout_height="wrap_content"
                 android:checked="@={formViewModel.agreeToTerms}"
                 android:text="I am a resident of California, USA"
+                android:layout_marginTop="16dp"
                 app:layout_constraintBottom_toTopOf="@+id/Ccpa_disclaimer_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -192,7 +193,7 @@
             android:layout_margin="0dp"
             android:maxLines="10"
             android:padding="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/submit_form_button"
+            app:layout_constraintBottom_toTopOf="@+id/ccpa_submit_form_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -201,7 +202,7 @@
             />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/submit_form_button"
+            android:id="@+id/ccpa_submit_form_button"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="362dp"
             android:layout_height="55dp"
